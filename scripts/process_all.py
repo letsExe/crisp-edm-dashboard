@@ -7,9 +7,13 @@ from crisp_edm_dashboard.processing.gr13 import (
 from crisp_edm_dashboard.processing.gr14 import (
     process_gr14,
 )
+from crisp_edm_dashboard.processing.gr16 import (
+    process_gr16,
+)
 
 
 def main() -> None:
+
     ensure_directories()
 
     print(
@@ -32,6 +36,18 @@ def main() -> None:
 
     print(
         f"GR14 concluído: {len(gr14)} registros."
+    )
+
+    print()
+
+    print(
+        "Processando GR16..."
+    )
+
+    gr16 = process_gr16()
+
+    print(
+        f"GR16 concluído: {len(gr16)} registros."
     )
 
     print()

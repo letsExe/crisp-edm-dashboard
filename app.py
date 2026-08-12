@@ -6,6 +6,9 @@ from crisp_edm_dashboard.views.gr13 import (
 from crisp_edm_dashboard.views.gr14 import (
     render as render_gr14,
 )
+from crisp_edm_dashboard.views.gr16 import (
+    render as render_gr16,
+)
 from crisp_edm_dashboard.views.overview import (
     render as render_overview,
 )
@@ -41,12 +44,7 @@ elif page == "GR14 — Aprovação e Reprovação":
     render_gr14()
 
 elif page == "GR16 — Perfil Discente":
-    st.title(
-        "GR16 — Perfil Discente"
-    )
-    st.info(
-        "Dashboard em reconstrução."
-    )
+    render_gr16()
 
 elif page == "GR38 — Perfil dos Ingressantes":
     st.title(
