@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Poetry
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Testes
+.pytest_cache/
+.ruff_cache/
+
+# Sistema
+.DS_Store
+
+# Dados institucionais
+data/raw/
+data/interim/
+data/processed/
+
+# Resultados gerados
+outputs/tables/
+outputs/figures/
+
+# Arquivos de ambiente
+.env
